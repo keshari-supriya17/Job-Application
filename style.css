@@ -1,0 +1,19 @@
+
+h1{
+    color: rgb(12, 0, 0);
+    text-align: center;
+}
+
+body{
+    background-color: rgb(253, 238, 240);
+    height: 100%;
+    width: 100% ;
+    font-family: 'Times New Roman', Times, serif;
+      
+}
+button{
+    background-color: black;
+    text-align: center;
+    color: white;
+
+}

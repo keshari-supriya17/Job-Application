@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form -- creation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Job Application Form</h1>
+    <hr />
+    <br />
+    Thank you for your interest in applying for a job with us. Please fill out
+    the form below to submit your application.
+    <br />
+    <br />
+    <hr />
+    Name <br />
+    <input type="text" name="username" placeholder="Enter your username" />
+    <br />
+    <br />
+    Email <br />
+    <input type="text" name="Email" placeholder="Enter your Email" /> <br />
+    <br />
+
+    City <br />
+    <input type="text" name="city" placeholder="Enter your city" /> <br />
+    <br />
+    Gender <br />
+    <input type="radio" id="male" name="gender" value="male" />
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female">Female</label>
+    <br /><br />
+
+    What is your highest level of education? <br />
+    <select name="education?">
+      <option value="highschool">High School</option>
+      <option value="bachelor">Bachelor's Degree</option>
+      <option value="master">Master's Degree</option>
+      <option value="phd">PhD</option>
+    </select>
+    <br /><br />
+    what is your current employment status? <br />
+    <select name="employment?">
+      <option value="employed">Employed</option>
+      <option value="unemployed">Unemployed</option>
+      <option value="student">Student</option>
+      <option value="other">Other</option>
+    </select>
+    <br /><br />
+
+    Please provide your phone number: <br />
+    <input type="text" name="Phone Number" placeholder="Phone Number" /> <br />
+    <br />
+
+    <form
+      action="/upload_resume.php"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <label for="resumeFile">Select Resume File:</label>
+      <input
+        type="file"
+        id="resumeFile"
+        name="resume"
+        accept=".pdf,.doc,.docx"
+      />
+    </form>
+    <br />
+    How did you hear about us? <br />
+    <select name="hear_about_us?">
+      <option value="social_media">Social Media</option>
+      <option value="friend">Friend</option>
+      <option value="job_portal">Job Portal</option>
+      <option value="other">Other</option>
+    </select>
+    <br /><br />
+    Here you can write about query <br />
+    <textarea
+      name="about"
+      rows="10"
+      cols="30"
+      placeholder="Write about query..."
+    ></textarea>
+    <br />
+    <button>Reset</button>
+
+    <button>Apply</button>
+  </body>
+</html>
